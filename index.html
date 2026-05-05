@@ -560,7 +560,7 @@
 <div id="loginContainer" class="login-container">
     <div class="login-box">
         <h2>🔐 LOGIN Digitalisasi Monitoring</h2>
-        <input type="text" id="loginUsername" placeholder="Masukkan Inisial" autocomplete="off">
+        <input type="text" id="loginUsername" placeholder="Masukkan NIK WorkDay" autocomplete="off">
         <button id="loginBtn">LOGIN</button>
         <div id="loginError" class="login-error"></div>
         <div id="loginLoading" class="login-loading" style="display:none;">⏳ Menghubungkan ke database...</div>
@@ -578,14 +578,14 @@
             <h2>⚙️ MANAGEMENT DATA (2 STREAM)</h2>
             
             <div class="stream-selector" id="adminStreamSelector">
-                <div class="stream-radio" data-stream="1">🎯 Room</div>
+                <div class="stream-radio" data-stream="1">🎯 STREAM 1</div>
                 <div class="stream-radio" data-stream="2">🎯 STREAM 2</div>
             </div>
             <input type="hidden" id="activeStream" value="1">
             
             <div style="display:flex; flex-wrap:wrap; gap:1rem;">
                 <div style="flex:1">
-                    <h3>👨‍⚖️ JURI <span id="streamJuriLabel" class="stream-badge">Room</span></h3>
+                    <h3>👨‍⚖️ JURI <span id="streamJuriLabel" class="stream-badge">STREAM 1</span></h3>
                     <input type="text" id="juriNIK" placeholder="NIK (digunakan untuk login)">
                     <input type="text" id="juriName" placeholder="Nama Lengkap" style="margin-top:0.5rem;">
                     <button class="btn-primary" id="addJuriBtn" style="margin-top:0.5rem">+ TAMBAH JURI</button>
@@ -593,7 +593,7 @@
                     <div class="small-text" style="margin-top:0.5rem;">⚠️ Juri login menggunakan NIK, otomatis masuk ke stream-nya</div>
                 </div>
                 <div style="flex:2">
-                    <h3>👥 PESERTA <span id="streamPesertaLabel" class="stream-badge">Room</span></h3>
+                    <h3>👥 PESERTA <span id="streamPesertaLabel" class="stream-badge">STREAM 1</span></h3>
                     <div class="grid-2">
                         <input type="text" id="pesertaName" placeholder="Nama Peserta">
                         <select id="channelSelect">
@@ -632,7 +632,7 @@
             <h2>📝 FORM PENILAIAN - <span id="formStreamLabel">STREAM</span></h2>
             <div id="formAlert"></div>
             <div class="form-group">
-                <label>PILIH PESERTA</label>
+                <label>PILIH PESERTA (Stream sesuai juri)</label>
                 <select id="dropdownPeserta"></select>
             </div>
             <div id="infoPeserta" class="info-peserta-card" style="display:none;"></div>
@@ -645,7 +645,7 @@
         <div id="dashboardPanel" class="panel">
             <h2>📊 DASHBOARD PENILAIAN</h2>
             <div class="stream-selector" id="dashboardStreamSelector">
-                <div class="stream-radio" data-stream="1">🎯 Room</div>
+                <div class="stream-radio" data-stream="1">🎯 STREAM 1</div>
                 <div class="stream-radio" data-stream="2">🎯 STREAM 2</div>
                 <div class="stream-radio" data-stream="all">🏆 SEMUA STREAM</div>
             </div>
